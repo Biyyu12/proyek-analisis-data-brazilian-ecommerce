@@ -20,7 +20,7 @@ st.title("📊 E-Commerce Business Dashboard")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("main_df.csv")
+    df = pd.read_csv("dashboard/main_df.csv")
 
     # Gunakan month_year sebagai date
     df['order_date'] = pd.to_datetime(df['month_year'])
